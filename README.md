@@ -3,9 +3,13 @@
 Member of group
 -------------------------------------------
 1.Chayabordin Maophimpha (6631503013)
+
 2.Khemachat Sittiritkawin (631503005)
+
 3.Apichai dancharoenrak (631503047)
+
 4.Pokpong Romsri (6631503025)
+
 5.Korrakit Lhakdee (631503102)
 -------------------------------------------
 
@@ -106,4 +110,5 @@ It adds a listener to the due property of the reminder to update the appearance 
 It creates an HBox layout to hold the labels (title, date, and time) and sets the spacing between them.
 Finally, it sets the graphic of the cell to the HBox layout, effectively customizing the appearance of the cell.
 Overall, the ReminderListCell class allows for customizing the visual representation of reminder items in a ListView, making it easy to distinguish between due and non-due reminders.
+
 *Note: We originally intended to make this class an anonymous class that got passed onto the Controller class' setCellFactory method as the argument, but we made the anonymous class into a separate class to increase customizability and readability.
