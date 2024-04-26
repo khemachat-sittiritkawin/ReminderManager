@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="829.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#handleCloseMenuItem" text="Close" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <VBox BorderPane.alignment="CENTER">
+            <children>
+                <ListView fx:id="reminderListView" prefHeight="402.0" prefWidth="446.0" />
+                <Label fx:id="itemCountLabel" text="9999 Item(s)" />
+            </children>
+        </VBox>
+    </center>
+    <left>
+        <VBox BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="addButton" mnemonicParsing="false" onAction="#handleCreateButton" text="+" />
+                <Button fx:id="removeButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleDeleteButton" text="-" textAlignment="CENTER" />
+                <Button fx:id="editButton" layoutX="10.0" layoutY="41.0" mnemonicParsing="false" onAction="#handleEditButton" text="*" textAlignment="CENTER" />
+            </children>
+        </VBox>
+    </left>
+    <bottom>
+        <HBox BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </BorderPane.margin>
+        </HBox>
+    </bottom>
+    <right>
+        <StackPane BorderPane.alignment="CENTER">
+            <children>
+                <VBox fx:id="detailVBox" prefHeight="445.0" prefWidth="338.0" visible="false">
+                    <children>
+                        <HBox>
+                            <children>
+                                <Label layoutX="10.0" layoutY="10.0" text="Title : " />
+                                <Label fx:id="selectedTitleLabel" text="N/A" />
+                            </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="73.0">
+                            <children>
+                                <Label layoutX="10.0" layoutY="10.0" text="Due : " />
+                                <Label fx:id="selectedDueLabel" text="N/A" />
+                            </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="173.0">
+                            <children>
+                                <Label layoutX="10.0" layoutY="10.0" text="Note : " />
+                                <TextArea fx:id="selectedNoteTextArea" editable="false" prefHeight="359.0" prefWidth="294.0" text="N/A" />
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="231.0" />
+                    </children>
+                </VBox>
+                <Label fx:id="noItemSelectedLabel" text="No item selected" />
+            </children>
+            <BorderPane.margin>
+                <Insets left="5.0" right="5.0" top="5.0" />
+            </BorderPane.margin>
+        </StackPane>
+    </right>
+</BorderPane>

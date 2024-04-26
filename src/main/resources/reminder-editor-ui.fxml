@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="320.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EditorController">
+   <children>
+      <HBox>
+         <children>
+            <Label text="Title : " />
+            <TextField fx:id="titleTextField" prefHeight="25.0" prefWidth="268.0" promptText="title" text="Untitled" />
+         </children>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="20.0" spacing="3.0">
+         <children>
+            <Label text="Date :" />
+            <TextField fx:id="dateTextField" prefHeight="25.0" prefWidth="105.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="invalidDateLabel" text="Invalid date!" textFill="RED" visible="false" />
+         </children>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="20.0" spacing="3.0">
+         <children>
+            <Label text="Time :" />
+            <TextField fx:id="timeTextField" layoutX="45.0" layoutY="10.0" prefHeight="25.0" prefWidth="104.0" />
+            <Label fx:id="invalidTimeLabel" text="Invalid time!" textFill="RED" visible="false" />
+         </children>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="45.0" spacing="3.0">
+         <children>
+            <Label text="Note :" />
+            <TextArea fx:id="noteTextArea" prefHeight="80.0" prefWidth="262.0" />
+         </children>
+      </HBox>
+      <Button fx:id="confirmButton" mnemonicParsing="false" text="Confirm" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>
