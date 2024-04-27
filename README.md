@@ -11,7 +11,7 @@ Member of group
 
 4.Pokpong Romsri (6631503025)
 
-5.Korrakit Lhakdee (631503102)
+5.Korrakit Lhakdee (6631503102)
 
 -------------------------------------------
 
