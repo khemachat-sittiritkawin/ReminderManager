@@ -5,9 +5,9 @@ Member of group
 
 1.Chayabordin Maophimpha (6631503013)
 
-2.Khemachat Sittiritkawin (631503005)
+2.Khemachat Sittiritkawin (6631503005)
 
-3.Apichai dancharoenrak (631503047)
+3.Apichai dancharoenrak (6631503047)
 
 4.Pokpong Romsri (6631503025)
 
